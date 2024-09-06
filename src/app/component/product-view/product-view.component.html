@@ -1,0 +1,61 @@
+<header style="
+position: sticky;
+top: 0;
+width: 100%;
+background-color: #fff;
+z-index: 1000;
+box-shadow: 0 2px 4px rgba(175, 105, 105, 0.1);" class="sticky-header">
+ <app-header></app-header>
+</header>
+<!-- product display part -->
+
+
+<div class="container-fluid" style="background-color:black">
+    <br>
+<header  style="
+position: sticky;
+top: 12%;
+left: 32%;
+width: 40%;
+background-color: #0c0b0b;
+z-index: 1000;
+box-shadow: 0 2px 4px rgba(175, 105, 105, 0.1);" class="sticky-header">
+   <section class="search-section">  
+    <form action="" class="search-form">
+        <input type="text" placeholder="Search product name" #filter class="search-input">
+        <button class="search-button primary" type="button" (click)="filterResults(filter.value)">Search</button>
+    </form>
+</section>
+
+</header>
+<br>
+    <div class="row">
+        <div class="col-md-2 mt-3" *ngFor="let item of data">
+            <div class="card mt-2 glassmorphism">
+                <div class="card-body">
+                    <div class="card-img-actions">
+                        <img routerLink="/product-detail/{{item.id}}" src="{{item.thumbnail}}" class="card-img img-fluid">
+                    </div>
+                </div>
+
+                <div class="card-body bg-light text-center">
+                    <div>
+                        <h6 class="font-weight-semibold">
+                            <a style="font-size: 13px;" class="text-default">{{item.title | slice:0:18}}</a>
+                        </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold">$ {{item.price}}</h3>
+                    <button routerLink="/product-detail/{{item.id}}" class="btn btn-sm btn-dark mt-2">
+                        <i class="fa fa-solid fa-info mr-2"></i>  View Details
+                    </button>
+                    <button (click)="addtocart(item)" class="btn btn-sm btn-warning mt-2">
+                        <i class="fa fa-cart-plus mr-2"></i> Add to Cart
+                    </button> 
+                    <button (click)="removeitem(item)" class="btn btn-sm btn-danger mt-2">
+                        <i class="fa fa-remove mr-2"></i> Remove Item
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

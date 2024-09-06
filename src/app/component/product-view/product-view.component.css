@@ -1,0 +1,202 @@
+/* Search Section Styles */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-input {
+    padding: 10px 15px;
+    border: 2px solid #e5920c;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #ff7e5f;
+    outline: none;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #e5920c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #ff7e5f;
+    transform: scale(1.05);
+  }
+  
+  .search-button:active {
+    background-color: #d87a0c;
+    transform: scale(1);
+  }
+  
+/* product-view */
+
+
+
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgb(48, 99, 238) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+    -webkit-box-shadow: 0px 0px 246px 18px rgba(169,170,194,0.89);
+    -moz-box-shadow: 0px 0px 246px 18px rgba(169,170,194,0.89);
+    box-shadow: 0px 0px 246px 18px rgba(169,170,194,0.89);
+}
+
+.dropbtn {
+    background-color: #ffeb3b; /* Bright yellow background */
+    color: #fff; /* White text color */
+    padding: 15px 30px; /* Increased padding */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
+    font-size: 20px; /* Larger font size */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    animation: bounce 2s infinite; /* Bounce animation */
+}
+
+.dropbtn:hover {
+    background-color: #fbc02d; /* Slightly darker yellow on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+.card img{
+    width: 150px;
+    height: 145px;
+    margin-bottom: 15px;
+}
+body{
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    text-align: left;
+   
+}
+.card-img-actions{
+    position: relative;
+}
+a{
+    text-decoration: none;
+}

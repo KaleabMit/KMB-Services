@@ -1,0 +1,167 @@
+/* Modern Card Style */
+.content-container {
+    position: relative;
+    padding: 20px;
+    background: #f5f5f5;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .content-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+    opacity: 0.5;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .content-text {
+    position: relative;
+    z-index: 2;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .content-text strong {
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 20px; /* Increased font size for strong elements */
+  }
+  
+  .content-text strong:hover {
+    color: #ff7e5f;
+    transform: scale(1.1);
+  }
+  
+  .content-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px; /* Increased font size for list items */
+  }
+  
+  .content-text ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border-left: 5px solid #ff7e5f;
+    border-radius: 5px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .content-text ul li:hover {
+    background: #ff7e5f;
+    color: #fff;
+    border-color: #feb47b;
+  }
+  
+  
+  
+
+
+
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+/* Navbar styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar a.active {
+    background-color: #555;
+}
+
+/* Portfolio section styling */
+.portfolio {
+    text-align: center;
+    padding: 2rem;
+}
+
+.portfolio h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Project cards styling */
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card .link-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Specific card styles */
+.youtube-clone {
+    background-color: #181716;
+    color: white;
+}

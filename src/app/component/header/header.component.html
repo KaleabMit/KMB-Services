@@ -1,0 +1,129 @@
+<header style="
+position: sticky;
+top: 0;
+width: 100%;
+background-color: #333;
+color: white;
+padding: 10px 0;">
+    <nav style="
+    position: sticky;
+top: 0;
+width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;">
+<div class="container-fluid animated-background" 
+style="background-image: url('assets/display.jpg'); background-size: cover; background-position: center;">
+    <div style="position: relative;
+    top: 10px;
+    width: 1%;
+    height: 1%;
+    right:510px;" class="dropdown">
+      
+        <img src="/assets/homeicon.webp" class="dropbtn">
+        <div class="dropdown-content">
+            <button (click)="navigateToAboutUs()">About Us</button>
+            <button (click)="navigateToBlog()">Blog</button>
+            <button (click)="navigateToCategory()">Category</button>
+            <button (click)="navigateToService()">Service</button>
+            <button (click)="navigateToFashion()">Fashion</button>
+            <button (click)="navigateToReview()">Review</button>
+            <button (click)="navigateToHaveshare()">Have Share</button>
+        </div>
+    </div>
+     <!-- right-top -->
+     <div class="col-md-4 company-info">
+        
+
+        <div class="dropdown">
+         <h4 class="dropbtns"><p ><img style="width: 40px;margin-left: 0px;" src="assets/usericonss.webp"></p></h4>
+            <div class="dropdown-content">
+               
+                  <!-- usericon -->
+                     
+                <div style="color: black;" class="welcome-container">
+                    <h1>Welcome to KMB All-In-One-Service</h1>
+                   
+                        <button (click)="navigateToLogin()">Login</button>
+                        <button (click)="navigateToSignup()" class="google-btn">SignUp</button>
+                    
+                    <p>By signing in via social media, I agree to the 
+                      <a href="#">KMB-Service! Free Membership Agreement</a> and 
+                      <a href="#">Privacy Policy</a>, and to receive emails about the platform's products and services.
+                    </p>
+                    
+                    <!-- User Account Sections -->
+                    <div style="cursor: pointer;color: rgb(48, 23, 136);" class="account-sections">
+                      <ul>
+                        <li><a href="">Services of KMB</a> </li>
+                        <li><a href="">Messages</a></li>
+                        <li><a href="">Suppliers</a></li>
+                        <li><a href="">Manufacturers</a></li>
+                        <li><a href="">Regional Supplies</a></li>
+                        <li><a href="">Account</a></li>
+                        <hr>
+                         <li><a href="">Membership program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+            </div>
+         </div>
+<br>
+         <div class="dropdown">
+            <h4 class="dropbtns"><p > Suppliers</p></h4>
+               <div class="dropdown-content">
+                  
+            <p><a href="">Become Supplier </a></p>
+
+                </div>
+         </div>
+            <p><a href="">Press</a></p>
+            <p><a href="">Sell on our website</a></p>               
+    </div>
+    <div class="row justify-content-center text-center">
+        
+        <div class="col-md-8 col-lg-6">
+            
+           
+           <br><br><br><br><br><br>
+
+            <div style="margin-left: 440px;" class="dropdown">
+                <i routerLink="cart-page" class="fas fa-shopping-cart" style="color:white;font-size: 38px;cursor:pointer;"> {{cartitems}}</i>
+                <ul class="dropdown-menu" *ngIf="this.showproduct.length >=1" style="background:black;border: 1px solid white;">
+                    <div style="width: 280px;" class="CartContainer">
+                        <div class="row">
+                            <div class="col-6">
+                                <strong class="text-light">Your Cart Items </strong>
+                            </div>
+                            <div class="col-3 text-end text-primary">
+                                <strong class="text-light">Price </strong>
+                            </div>
+                            <!-- ngFor looping-->
+                            <div class="row mt-3" *ngFor="let item of showproduct">
+                                <div class="col-7">
+                                    <img style="width: 70px;margin-left: 5px;" src="{{item.thumbnail}}">
+                                </div>
+                                <div class="col-3">
+                                    <h4 class="text-light">${{item.price}}</h4>
+                                </div>
+                                <div class="col-1">
+                                    <i style="cursor: pointer;" (click)="deleteitem(item)" class="fa fa-trash text-danger" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button (click)="emptycart()" *ngIf="this.showproduct.length >=1" class="btn btn-sm btn-warning mt-2">Empty cart</button>
+                            </div>
+                            <!---end-->
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</nav>
+</header>

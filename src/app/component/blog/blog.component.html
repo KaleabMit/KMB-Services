@@ -1,0 +1,144 @@
+<header style="
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(175, 105, 105, 0.1);" 
+  class="sticky-header">
+  <div class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+    <div class="nav-links" style="display: flex; gap: 20px; color: hsl(0, 40%, 98%);">
+      <p routerLink="">Home</p>
+      <p (click)="navigateToBlogservice()">Services</p>
+      <p routerLink="">Portfolio</p>
+      <p routerLink="">Team</p>
+      <p routerLink="">Contact</p>
+    </div>
+  </div>
+</header>
+
+
+<div class="card youtube-clone" *ngIf="!blogshow">
+  <div class="project-cards">
+    <div class="card youtube-clone">
+      <img src="assets/Teleport.png" alt="YouTube Clone"><br><br><br>
+      <h2>Teleport Technologies PLC</h2>
+      <p style="color: rgb(244, 242, 239);"> is a prominent technology company based in Ethiopia, focusing on digital solutions and services. </p>
+      <a (click)="this.blogshow=true" class="link-button">More</a>
+    </div>
+  </div>
+</div>
+
+<div style="font-size: medium;" class="content-container" *ngIf="blogshow">
+  <p class="content-text">
+    <h3>Teleport Technologies PLC is a prominent technology company based in Ethiopia, focusing on digital solutions and services.</h3>
+    <br><br>
+    <img src="https://teleportet.com/wp-content/uploads/2022/04/New-Project-5-1536x864.png" alt="Teleport Technologies PLC">
+    <br><br>
+    Here are some key aspects of the company:
+    <br><br>
+    <strong>Overview</strong><br>
+    Teleport Technologies PLC is a multi-unit technology company that aims to address fundamental problems through technology. They focus on maximizing business efficiency and enabling businesses to join the digital economy.
+    <br><br>
+    <strong>Services and Solutions</strong><br>
+    Teleport Technologies offers a range of services, including:
+    <ul>
+      <li>Digital Airtime Distribution: They are the first and largest digital airtime distribution service provider in Ethiopia.</li>
+      <li>Virtual Distribution and Logistics Platforms: These platforms facilitate service delivery for both individual and enterprise clients.</li>
+      <li>Payment Platforms: They provide customer-centric payment solutions designed to simplify services and reduce costs.</li>
+      <br><br>
+      <img src="https://teleportet.com/wp-content/uploads/2022/04/186-1860084_social-social-media-connecting-transparent-png-png-download-1.png" alt="Digital Services">
+    </ul>
+    <strong>Mission and Vision</strong><br>
+    Mission: To empower people through technology, simplify services, and drive down costs.<br>
+    Vision: To digitally transform value distribution for inclusive access, sustainability, and scale.
+    <br><br>
+    <strong>Partnerships</strong><br>
+    Teleport Technologies has established partnerships with various enterprises, including mobile operators, financial institutions, and other B2C enterprises. These partnerships help expand their scale and scope.
+    <br><br>
+    <strong>Achievements</strong><br>
+    Revolutionizing Airtime Distribution: They have significantly improved the way airtime is distributed in Ethiopia, contributing to environmental betterment and reducing foreign currency spending on printed voucher cards.<br>
+    In-house Expertise: All their software solutions are developed in-house, ensuring high quality and tailored solutions for their clients.<br>
+    
+
+
+
+
+
+    
+<div class="portfolio">
+  <div class="project-cards">
+      <div class="card youtube-clone">
+          <img src="assets/youtube-clone.png" alt="YouTube Clone">
+          <h2>YouTube Clone</h2>
+          <p style="color: wheat;">That’s fantastic! Offering a YouTube Clone to our customers can be a valuable service. It allows them to have a platform similar to YouTube, tailored to their specific needs.</p>
+          <a href="https://teleportet.com/" class="link-button">Link</a>
+      </div>
+      <div class="card quiz-app">
+          <img src="assets/quiz-app.jpg" alt="Quiz App">
+          <h2>Quiz App</h2>
+          <p style="color: wheat;">That’s great! Offering a Quiz App to our customers can be a valuable tool for education, training, and entertainment.</p>
+          <a href="https://teleportet.com/" class="link-button">Link</a>
+      </div>
+      <div class="card product-landing-page">
+          <img src="assets/product-landing-page.jpg" alt="Product Landing Page">
+          <h2>Product Landing Page</h2>
+          <p style="color: wheat;">That’s excellent! Offering a Product Landing Page to our customers can significantly boost their product’s visibility and sales.</p>
+          <a href="https://teleportet.com/" class="link-button">Link</a>
+      </div>
+      <div class="card youtube-clone">
+          <img src="assets/messaging servie.jpeg" alt="Messaging Service">
+          <h2>Messaging Service</h2>
+          <p style="color: wheat;">That’s fantastic! Offering a Messaging Service to our customers can greatly enhance their communication capabilities. </p>
+          <a href="https://teleportet.com/" class="link-button">Link</a>
+      </div>
+      <div class="card quiz-app">
+          <img src="assets/twitter clone.jpeg" alt="Twitter Clone">
+          <h2>Twitter Clone</h2>
+          <p style="color: wheat;">That’s awesome! Offering a Twitter Clone to our customers can be a powerful tool for social networking and community building.</p>
+          <a href="https://teleportet.com/" class="link-button">Link</a>
+      </div>
+      <div class="card product-landing-page">
+          <img src="assets/blog app.jpg" alt="Blog App">
+          <h2>Blog App</h2>
+          <p style="color: wheat;">That’s wonderful! Offering a Blog App to our customers can be a powerful tool for content creation and sharing.</p>
+          <a href="https://teleportet.com/" class="link-button">Link</a>
+      </div>
+  </div>
+</div>
+  
+</div>
+
+<div style="display: flex;" >
+      <div class="card youtube-clone"*ngIf="!blogshow">
+          <img src="assets/Teleport.png" alt="YouTube Clone"><br><br><br>
+          <h2>Teleport Technologies PLC</h2>
+          <p style="color: rgb(244, 242, 239);"> is a prominent technology company based in Ethiopia, focusing on digital solutions and services. </p>
+          <a href="https://www.linkedin.com/in/kaleab-mitku-81a399211/?trk=opento_sprofile_details" class="link-button">More</a>
+      </div>
+    <div class="card youtube-clone"*ngIf="!blogshow">
+      <img src="assets/Teleport.png" alt="YouTube Clone"><br><br><br>
+      <h2>Teleport Technologies PLC</h2>
+      <p style="color: rgb(244, 242, 239);"> is a prominent technology company based in Ethiopia, focusing on digital solutions and services. </p>
+      <a href="https://www.linkedin.com/in/kaleab-mitku-81a399211/?trk=opento_sprofile_details" class="link-button">More</a>
+  </div>
+  <div class="card youtube-clone"*ngIf="!blogshow">
+    <img src="assets/Teleport.png" alt="YouTube Clone"><br><br><br>
+    <h2>Teleport Technologies PLC</h2>
+    <p style="color: rgb(244, 242, 239);"> is a prominent technology company based in Ethiopia, focusing on digital solutions and services. </p>
+    <a href="https://www.linkedin.com/in/kaleab-mitku-81a399211/?trk=opento_sprofile_details" class="link-button">More</a>
+</div>
+<div class="card youtube-clone"*ngIf="!blogshow">
+  <img src="assets/Teleport.png" alt="YouTube Clone"><br><br><br>
+  <h2>Teleport Technologies PLC</h2>
+  <p style="color: rgb(244, 242, 239);"> is a prominent technology company based in Ethiopia, focusing on digital solutions and services. </p>
+  <a href="https://www.linkedin.com/in/kaleab-mitku-81a399211/?trk=opento_sprofile_details" class="link-button">More</a>
+</div>
+<div class="card youtube-clone"*ngIf="!blogshow">
+  <img src="assets/Teleport.png" alt="YouTube Clone"><br><br><br>
+  <h2>Teleport Technologies PLC</h2>
+  <p style="color: rgb(244, 242, 239);"> is a prominent technology company based in Ethiopia, focusing on digital solutions and services. </p>
+  <a href="https://www.linkedin.com/in/kaleab-mitku-81a399211/?trk=opento_sprofile_details" class="link-button">More</a>
+</div>
+</div>
+

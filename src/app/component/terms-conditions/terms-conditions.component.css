@@ -1,0 +1,36 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .terms-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .terms-container h2 {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .terms-container p, .terms-container ul {
+    margin-bottom: 15px;
+  }
+  
+  .terms-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
